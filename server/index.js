@@ -56,5 +56,5 @@ io.on('connection', (socket) => {
 // Muestra el enlace de donde se esta ejecutando el proyecto
 const port = process.env.PORT || 3000;
 http.listen(port, () => {
-  console.log('Servidor corriendo en http://localhost:3000');
+  console.log(`Servidor corriendo en el puerto ${port}`);
 });
