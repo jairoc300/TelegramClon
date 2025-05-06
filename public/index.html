@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Telegram Clon</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="login">
+    <h2>Iniciar sesión</h2>
+    <input type="text" id="username" placeholder="Nombre">
+    <input type="text" id="status" placeholder="Estado">
+
+    <label for="avatarSelect">Elegir avatar:</label>
+    <select id="avatarSelect">
+      <option value="">-- Selecciona un avatar --</option>
+      <option value="avatar1.png">Avatar 1(chico)</option>
+      <option value="avatar2.png">Avatar 2(chica)</option>
+    </select>
+
+    <p>O subir imagen personalizada:</p>
+    <input type="file" id="avatarFile" accept="image/*">
+    <img id="avatarPreview" src="" alt="Vista previa" class="hidden" width="80" style="margin: 10px auto; border-radius: 50%; display: block;">
+
+    <button id="loginBtn">Entrar</button>
+    <p id="loginError" class="error-message hidden"></p>
+  </div>
+
+  <div id="chat" class="hidden">
+    <aside>
+      <h3>Usuarios conectados</h3>
+      <ul id="usersList"></ul>
+    </aside>
+    <main>
+      <div id="messages"></div>
+      <p id="typingIndicator"></p>
+      <div id="inputArea">
+        <input type="text" id="messageInput" placeholder="Escribe un mensaje...">
+        <label for="fileInput" id="fileLabel">📎</label>
+        <input type="file" id="fileInput" class="hidden">
+      </div>
+    </main>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
