@@ -15,8 +15,8 @@ https://telegramclon.onrender.com
 - Render (para desplegarlo en la nube)
 
 ## Puntos extra que he realizado:
--(1,5 puntos) El usuario se establece su propia imagen de avatar al inicio de la sesión.
--(2 puntos) Permitir compartir archivos en la sala de chat. Si los archivos son de tipo imagen, deben mostrarse y permitir descargarlas. En otro caso, debe sólo permitir descargar.
+- (1,5 puntos) El usuario se establece su propia imagen de avatar al inicio de la sesión.
+- (2 puntos) Permitir compartir archivos en la sala de chat. Si los archivos son de tipo imagen, deben mostrarse y permitir descargarlas. En otro caso, debe sólo permitir descargar.
 
 ## 🛠️ Instalación local
 
